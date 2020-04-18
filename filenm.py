@@ -3,7 +3,7 @@ ALLOWED_EXTENSIONS = {'jpeg', 'jpg', 'png'}
 
 def allowed_file(filename):
     if '.' not in filename:
-        return '.' in filename
+        return False
     return filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
